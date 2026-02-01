@@ -1,14 +1,4 @@
---[[
-
-	Rayfield Interface Suite
-	by Sirius
-
-	shlex  | Designing + Programming
-	iRay   | Programming
-	Max    | Programming
-	Damian | Programming
-
-]]
+print("START!")
 
 if debugX then
 	warn('Initialising Rayfield')
@@ -700,11 +690,12 @@ repeat
 
 	buildAttempts = buildAttempts + 1
 until buildAttempts >= 2
-		
+
 Rayfield.Main.Topbar.ChangeSize.Image = ""
 Rayfield.Main.Elements.Template.Dropdown.Toggle.Image = ""
-Rayfield.Enabled = false		
-Rayfield.Name = "MainGui"
+
+Rayfield.Enabled = false
+
 if gethui then
 	Rayfield.Parent = gethui()
 elseif syn and syn.protect_gui then 
@@ -4010,6 +4001,3 @@ task.delay(4, function()
 end)
 
 return RayfieldLibrary
-
-
-
